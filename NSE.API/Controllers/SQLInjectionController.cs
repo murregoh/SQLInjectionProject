@@ -36,8 +36,9 @@ namespace NSE.API.Controllers
         [HttpGet]
         public IEnumerable<User> Get([FromBody] User user)
         {
-            sqlInjectionService.GetUsers(user.UserName, user.Password);
-            return null;
+            IEnumerable<User> users = sqlInjectionService.GetUsers(user);
+
+            return users;
         }
 
         #endregion
