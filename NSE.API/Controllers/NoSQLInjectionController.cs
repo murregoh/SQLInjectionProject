@@ -15,7 +15,7 @@ namespace NSE.API.Controllers
         /// <summary>
         /// The NoSQLInnjection Service
         /// </summary>
-        public readonly INoSQLInjectionService noSqlInjectionService;
+        private readonly INoSQLInjectionService noSqlInjectionService;
 
         #endregion
 
@@ -34,10 +34,11 @@ namespace NSE.API.Controllers
         #region Methods
 
         [HttpGet]
-        public IEnumerable<User> Get()
+        public IEnumerable<User> Get([FromBody] User user)
         {
-            noSqlInjectionService.GetUsers("","");
-            return null;
+            IEnumerable<User> users = noSqlInjectionService.GetUsers(user);
+
+            return users;
         }
 
         #endregion

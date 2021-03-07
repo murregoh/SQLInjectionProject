@@ -6,11 +6,10 @@ namespace NSE.Service.Interfaces
     public interface INoSQLInjectionService
     {
         /// <summary>
-        /// To Get the user
+        /// Get the user
         /// </summary>
-        /// <param name="userName">The User name</param>
-        /// <param name="password">The password</param>
-        /// <returns>A list of users</returns>
-        IEnumerable<User> GetUsers(string userName, string password);
+        /// <param name="user">The user</param>
+        /// <returns>A user</returns>
+        IEnumerable<User> GetUsers(User user);
     }
 }
