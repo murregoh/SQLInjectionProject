@@ -13,7 +13,8 @@ namespace NSE.Repository
         /// <summary>
         /// The connection string
         /// </summary>
-        protected const string CONNECTION_STRING = "Server=localhost;Database=NSEDataBase;User Id = sa; Password=MyPassw0rd";
+        //protected const string CONNECTION_STRING = "Server=localhost;Database=NSEDataBase;User Id = sa; Password=MyPassw0rd";
+        protected const string CONNECTION_STRING = "Server=tcp:mateourregohoyosdb.database.windows.net,1433;Initial Catalog=NSEDataBase;Persist Security Info=False;User ID=murregoh;Password=MyPassw0rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         #endregion
 
