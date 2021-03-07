@@ -7,7 +7,7 @@ using NSE.Shared.Models;
 namespace NSE.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[Controller]")]
     public class SQLInjectionController : ControllerBase
     {
         #region Fields
