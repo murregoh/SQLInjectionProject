@@ -5,4 +5,12 @@
   </PropertyGroup>
 
 
+  <ItemGroup>
+    <ProjectReference Include="..\NSE.Shared\NSE.Shared.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\NSE.Service\NSE.Service.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

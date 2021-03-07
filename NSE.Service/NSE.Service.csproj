@@ -4,4 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NSE.Repository\NSE.Repository.csproj" />
+    <ProjectReference Include="..\NSE.Shared\NSE.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
 </Project>
